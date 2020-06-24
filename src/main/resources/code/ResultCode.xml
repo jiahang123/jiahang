@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-code>
+    <!-- 错误码标识等于id加"."加子节点ident; 错误码标识等于code加子节点pre加code-->
+    <!-- 货大  返回码 -->
+	<type id="common" code="11">
+		<item ident="success" pre="0" code="0" msgZh="请求成功" msgEn="Request successful"/>
+		<item ident="fail" pre="0" code="1" msgZh="请求失败" msgEn="request was aborted"/>
+		<item ident="limit.auth" pre="0" code="2" msgZh="您没有请求该链接的权限" msgEn="You do not have permission to request the link"/>
+		<item ident="over.token" pre="0" code="3" msgZh="登陆已过期，请重新登陆" msgEn="Token has expired"/>
+		<item ident="user.notexist" pre="0" code="4" msgZh="用户不存在" msgEn="user does not exist"/>
+		<item ident="incorrect.pass" pre="0" code="5" msgZh="密码错误" msgEn="Incorrect password"/>
+		<item ident="param.error" pre="0" code="6" msgZh="参数校验失败" msgEn="Parameter verification failed"/>
+		<item ident="sys.error" pre="0" code="7" msgZh="服务器内部错误!" msgEn="Server internal error"/>
+		<item ident="nohave.token" pre="0" code="8" msgZh="登陆已过期，请重新登陆" msgEn="Token not has"/>
+		<item ident="nohave.fail.token" pre="0" code="9" msgZh="登陆已过期，请重新登陆" msgEn="Token not has"/>
+	</type>
+</service-code>

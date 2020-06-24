@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.netty.modules.user.mapper.UserRepository">
+
+
+
+    <select id="findUserByLogoName" resultType="com.netty.modules.user.bean.User">
+            SELECT u.* FROM db_user u WHERE u.logo_name = #{logoName}
+    </select>
+
+
+    <select id="findUserByClientId" resultType="com.netty.modules.user.bean.User">
+            SELECT u.* FROM  db_user u WHERE u.client_id = #{clientId}
+    </select>
+
+</mapper>
