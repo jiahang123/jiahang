@@ -2,7 +2,6 @@ package com.netty.modules.user.controller;
 
 import com.netty.common.bean.PushMessage;
 import com.netty.common.bean.ResultVo;
-import com.netty.common.server.SocketIOService;
 import com.netty.common.server.TcpPushService;
 import com.netty.common.utils.ResultVoUtils;
 import com.netty.modules.user.bean.User;

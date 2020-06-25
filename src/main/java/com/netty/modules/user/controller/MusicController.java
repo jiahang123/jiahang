@@ -7,7 +7,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.jaudiotagger.audio.AudioFile;
 import org.jaudiotagger.audio.AudioFileIO;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import sun.audio.AudioPlayer;
@@ -18,7 +17,6 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
 @Api(value = "music")
 @RequestMapping("/music")
 class MusicController extends Thread{

@@ -4,8 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.netty.modules.user.mapper.CurrentDateRepository">
 
-
-
     <select id="getCurrentDate" resultType="com.netty.modules.user.bean.CurrentDate">
             SELECT now()
     </select>
